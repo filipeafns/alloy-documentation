@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Alloy Docs',
-  tagline: 'Explore Guides',
+  tagline: 'Welcome to the Alloy Automation documentation',
   favicon: 'img/favicon.ico',
 
   url: 'https://your-docusaurus-site.example.com',
@@ -28,12 +28,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           editUrl:
-            'https://github.com/filipeafns/alloy-documentation/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          editUrl:
-            'https://github.com/filipeafns/alloy-documentation/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/filipeafns/alloy-documentation/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -68,17 +63,68 @@ const config = {
       style: 'light',
       links: [
         {
-          title: 'Docs',
+          title: 'Alloy Embedded',
           items: [
             {
-              label: 'Docs',
-              to: '/docs/intro',
+              label: 'Learn More',
+              to: '#',
+            },
+            {
+              label: 'Guides',
+              to: '#',
+            },
+            {
+              label: 'API',
+              to: '#',
+            },
+          ],
+        },
+        {
+          title: 'Alloy Embedded',
+          items: [
+            {
+              label: 'Learn More',
+              to: '#',
+            },
+            {
+              label: 'Guides',
+              to: '#',
+            },
+            {
+              label: 'API',
+              to: '#',
+            },
+          ],
+        },
+        {
+          title: 'Pupular Apps',
+          items: [
+            {
+              label: 'NetSuite',
+              to: '#',
+            },
+            {
+              label: 'Salesforce',
+              to: '#',
+            },
+            {
+              label: 'Quickbooks',
+              to: '#',
+            },
+          ],
+        },
+        {
+          title: 'About Alloy',
+          items: [
+            {
+              label: 'Company',
+              to: '#',
             },
           ],
         },
         // ... other footer links ...
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Alloy Automation. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
