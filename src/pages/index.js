@@ -29,7 +29,10 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+      <div className='welcome'>
+        <img className='welcome-logo' src='/img/alloy.svg'></img>
+        <h2>Welcome to the Alloy Automation documentation</h2>
+      </div>
       <main>
         <HomepageFeatures />
       </main>
