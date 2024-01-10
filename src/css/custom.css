@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,300;400;500&display=swap');
 
 :root {
   
@@ -14,9 +14,10 @@
   --ifm-color-primary-dark: #000;
   --ifm-color-primary-darker: #000;
   --ifm-color-primary-darkest: #000;
-  --ifm-color-primary-light: #000;
-  --ifm-color-primary-lighter: #000;
-  --ifm-color-primary-lightest: #000;
+  --ifm-color-primary-light: #464646;
+  --ifm-color-primary-lighter: #464646;
+  --ifm-color-primary-lightest: #464646;
+  --ifm-color-primary-inverted: #fff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
@@ -29,15 +30,54 @@
   --ifm-color-primary-dark: #fff;
   --ifm-color-primary-darker: #fff;
   --ifm-color-primary-darkest: #fff;
-  --ifm-color-primary-light: #fff;
-  --ifm-color-primary-lighter: #fff;
-  --ifm-color-primary-lightest: #fff;
+  --ifm-color-primary-light: #858585;
+  --ifm-color-primary-lighter: #858585;
+  --ifm-color-primary-lightest: #858585;
+  --ifm-color-primary-inverted: #000000;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background-image: url('/img/bg.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.nice-button {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-inverted);
+  padding: 12px 24px;
+  border-radius: 50px;
+  width: fit-content;
+  transition: all .3s;
+  align-self: center;
+}
+
+.nice-button:hover {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-inverted);
+  padding: 12px 24px;
+  border-radius: 50px;
+  width: fit-content;
+}
+
+.welcome {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 40px 0;
+  align-items: center;
+}
+
+.welcome-logo {
+  width: 150px;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Inter', sans-serif;
 }
+
+h2 { font-weight: 400; }
 
 button {
   border-radius: 50px;
@@ -46,6 +86,29 @@ button {
 .intro-container {
   display: flex;
   gap: 32px;
+  margin-bottom: 64px;
+}
+
+.popular-apps {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.popular-apps h3 { text-align: center; }
+
+.popular-apps ul { 
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+}
+.popular-apps ul li {
+  list-style: none;
+  padding: 0;
 }
 
 .nice-card {
