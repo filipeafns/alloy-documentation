@@ -28,7 +28,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           editUrl:
-            'https://github.com/filipeafns/alloy-documentation/',
+            'https://github.com/filipeafns/alloy-documentation/blob/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
