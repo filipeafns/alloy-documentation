@@ -8,8 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/embedded.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Learn how Alloy Embedded can help solve your most advanced business integration requirements. 
       </>
     ),
     label: 'Explore Docs',
@@ -20,8 +19,7 @@ const FeatureList = [
     Svg: require('@site/static/img/unifiedapi.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Alloy Unified API can help save you both time and money while streamlining your development processes.
       </>
     ),
     label: 'Explore Docs',
@@ -39,7 +37,7 @@ function Feature({Svg, title, description, label, URL}) {
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
-      <a className='button button--secondary button--md' href={URL}>{label}</a>
+      <a className='nice-button' href={URL}>{label}</a>
     </div>
   );
 }
@@ -52,6 +50,19 @@ export default function HomepageFeatures() {
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
+        </div>
+        <div className='popular-apps'>
+          <h3>Popular Integrations</h3>
+          <ul>
+            <li><img src='img/apps/shopify.svg'/></li>
+            <li><img src='img/apps/bigc.svg'/></li>
+            <li><img src='img/apps/netsuite.svg'/></li>
+            <li><img src='img/apps/brightpearl.svg'/></li>
+            <li><img src='img/apps/hubspot.svg'/></li>
+            <li><img src='img/apps/klavyio.svg'/></li>
+            <li><img src='img/apps/quickbooks.svg'/></li>
+            <li><img src='img/apps/woo.svg'/></li>
+          </ul>
         </div>
       </div>
     </section>
