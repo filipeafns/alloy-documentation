@@ -4,17 +4,16 @@ Title: 'Introduction to Unified API'
 sidebar_label: 'Introduction to Unified API'
 ---
 
-## What is Alloy Embedded?
+## What is Alloy UnfiedAPI?
 
-Alloy Embedded is a powerful Embedded iPaaS designed to help you streamline data flows between applications.
-
-By embedding a simple SDK, you can instantly add support for the over 270+ (and growing) integrations  within your own application. Alloy Embedded takes away the complexity and time consuming effort of building integrations in house. After you've embedded our SDK, Alloy Embedded infrastructure handles all the behind the scenes work – OAuth, redirects, credential management, field mapping, rate limiting, batching, and much more.
+Learn what Alloy Unified API is and how it can help save you both time and money while streamlining your development processes.
 
 ## Where to go from here
 
-If this sounds interesting, the you've found the right place.  Keep reading to get started. We'll cover core concepts such as:
+Welcome to Alloy's Unified API (UAPI). The Unified API allows any ISV to seamlessly integrate with dozens of APIs in mere minutes – all with a consistent and standardized schema.
 
-- How to build your first integration
-- How to embed the Alloy Embedded SDK in your codebase
-- How to stream data to your application
-- Going live
+UAPI makes it easy to build an integration without worrying about the complexities most APIs typically present: we handle authentication, rate limits, webhooks, etc for you all inside the box. Let's take a look at some of the benefits to using a Alloy's UAPI below:
+
+- **Rate Limits**: Alloy's UAPI automatically has built in rate limiting technology. Once you connect an app to Alloy, we automatically cache the most up to date data. When you want to pull data, you hit our cache first (which has significantly higher rate limits than most publically available APIs) meaning you can pull vast sums of data in a more time efficient manner than if you invoked the app's API directly.
+- **Webhooks and Reconciliation**: In order to make sure our cache is always up to date, we subscribe to all relevant webhooks. When a new event hits our servers, we add it to the cache.  To be extra safe, we also perform recurring polling jobs to reconcile any dropped webhooks. Moreover, if an app doesn't have webhooks out of the box, we use our built in polling infrastructure to support almost real time events.
+- **Standardized Data Schema**: UAPI makes it easy and fast to build integrations using our standardized data schema. For example, let's assume you want to build an integration that pulls all orders from Shopify. A week later, you also decide you need to support Magento and WooCommerce, other popular e-commerce site providers. With UAPI, you can easily support multiple apps with minimal work since our schemas are standardized across supported apps.
