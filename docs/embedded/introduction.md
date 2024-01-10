@@ -4,7 +4,7 @@ Title: Introduction
 sidebar_label: 'Introduction to Embedded'
 ---
 
-## What is Alloy Embedded?
+## HI Gregg
 
 Alloy Embedded is a powerful Embedded iPaaS designed to help you streamline data flows between applications.
 
