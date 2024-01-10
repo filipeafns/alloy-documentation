@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 Title: Introduction
+sidebar_label: 'Introduction to Embedded'
 ---
 
 ## What is Alloy Embedded?

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
-Title: Introduction
+Title: 'Introduction to Unified API'
+sidebar_label: 'Introduction to Unified API'
 ---
 
 ## What is Alloy Embedded?
