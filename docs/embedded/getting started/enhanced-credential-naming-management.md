@@ -1,7 +1,7 @@
 ---
 sidebar_label: 'Enhanced Credentials'
 ---
-# Overview
+# OVERVIEW
 
 Our new feature addresses two key areas:
 
